@@ -192,7 +192,6 @@ nav ul a:hover {
   color: #ffcb5b;
 }
 
-
 .boxes {
   display: flex;
   flex-direction: row;
@@ -222,6 +221,7 @@ nav ul a:hover {
   max-width: 360px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 .box:hover {
   transform: translateY(-5px);
@@ -762,7 +762,7 @@ div.slideButtons{
 }
 
 .pricingContainer {
-  width: 100%;             
+  width: 100%;              
   max-width: 90%;       
   display: flex;
   gap: 60px;               
@@ -1173,7 +1173,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  box-shadow: #ffd35b60 0 0 30px;
+  box-shadow: #ffe0328f 0 0 30px;
   position: relative; 
   overflow: hidden;
   min-height: 75vh; 
@@ -1201,7 +1201,7 @@ footer h1{
     font-size: 30px;
   text-align: center;
   margin-top:20px;
-  color: rgb(255, 205, 148);
+  color: rgb(255, 197, 73);
   margin-bottom: 0px;
 }
 
@@ -1240,13 +1240,13 @@ footer h1{
 }
 
 footer a, footer a:active, footer a:visited{
-  color: rgb(255, 217, 136);
+  color: rgb(255, 222, 151);
   text-decoration:none;
 }
 
 .line{
   width: 80%;
-  background-color: #ffc374;
+  background-color: #ffc830;
   height: 5px;
   margin-right: auto;
   margin-left: auto;
@@ -1271,7 +1271,7 @@ footer a, footer a:active, footer a:visited{
 
 .footerCopyright h3{
   font-size: 20px;
-  color: #ffdaaf;
+  color: #ffc64a;
 }
 
 footer a {
@@ -1358,4 +1358,148 @@ footer a:hover {
 
 .delay-5 {
     transition-delay: 0.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+div.slideButtons{
+  display: flex;
+  gap: 20px;
+}
+
+/* ==========================================================================
+   NEW RESPONSIVE MEDIA QUERIES (ADD TO BOTTOM)
+   ========================================================================== */
+
+/* 1. LESS THAN 1333px BREAKPOINT (Desktop resizing & Small screens) */
+@media screen and (max-width: 1333px) {
+  body{
+    overflow-x: hidden;
+  }
+  /* Scale down the massive fonts slightly so they don't break lines awkwardly */
+  .mainTitle {
+    font-size: 60px;
+  }
+  .tagline {
+    font-size: 32px;
+  }
+  
+  /* Navigation spacing collapses smoothly */
+  nav {
+    padding: 0 10px;
+  }
+  nav ul {
+    gap: 30px;
+    font-size: 20px;
+  }
+  .contact {
+    font-size: 20px;
+    padding: 8px 20px;
+  }
+
+  .logo{
+    width: 200px;
+  }
+
+  /* Slide panel structural adjustments */
+  .slideshow-container {
+    max-width: 95%;
+    padding: 0 40px;
+  }
+  .slide-content, .slide-info-row {
+    height: auto; /* Drops the rigid 400px constraint */
+    padding: 40px 20px;
+  }
+  
+  /* Flexboxes swap to rows/columns smoothly */
+  .boxes {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .box {
+    max-width: 45%;
+  }
+}
+
+/* 2. MOBILE VIEWPORTS (Less than 768px) */
+@media screen and (max-width: 768px) {
+  /* Navigation menu stacks vertically for phones */
+  nav {
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+  }
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    font-size: 16px;
+  }
+  .contactButton {
+    justify-content: center;
+    margin-right: 0;
+  }
+  .contact {
+    font-size: 16px;
+    padding: 6px 16px;
+  }
+  .logo {
+    width: 180px;
+    margin: 0 auto;
+  }
+
+  /* Core Hero typography scale down for small glass displays */
+  .mainTitle {
+    font-size: 40px;
+  }
+  .tagline {
+    font-size: 24px;
+  }
+  .description {
+    font-size: 16px;
+  }
+  .title {
+    height: auto;
+    padding-top: 180px;
+    gap: 40px;
+  }
+
+  /* Service boxes go full single-column block layout */
+  .box {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  /* Slideshow content items switch to columns */
+  .slide-content, .slide-info-row {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 15px;
+  }
+  .slide-info {
+    align-items: center;
+    text-align: center;
+  }
+  .slide-info h2 {
+    font-size: 24px;
+  }
+
+  /* Footer containers collapse smoothly */
+  .contentFooter {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    scale: 1; /* Cleans up the forced shrink */
+  }
+  footer h1 {
+    font-size: 28px;
+  }
+  .footerSubtitle {
+    font-size: 20px;
+  }
 }
