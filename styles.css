@@ -145,7 +145,7 @@ nav ul a:hover {
 .mainTitle {
   font-size: 80px;
   color: white;
-  margin: 0 0 20px 0;
+  margin: 0 0 20px 0 !important;
   max-width: 100%; 
 }
 
@@ -1379,21 +1379,24 @@ div.slideButtons{
   body{
     overflow-x: hidden;
   }
+
   /* Scale down the massive fonts slightly so they don't break lines awkwardly */
   .mainTitle {
     font-size: 60px;
+    
   }
+
   .tagline {
     font-size: 32px;
   }
   
   /* Navigation spacing collapses smoothly */
   nav {
-    padding: 0 10px;
+    padding: 0 20px;
   }
   nav ul {
-    gap: 30px;
-    font-size: 20px;
+    gap: 23px;
+    font-size: 18px;
   }
   .contact {
     font-size: 20px;
@@ -1409,6 +1412,10 @@ div.slideButtons{
     max-width: 95%;
     padding: 0 40px;
   }
+
+  .aboutBoxes{
+    gap: 30px;
+  }
   .slide-content, .slide-info-row {
     height: auto; /* Drops the rigid 400px constraint */
     padding: 40px 20px;
@@ -1422,6 +1429,8 @@ div.slideButtons{
   .box {
     max-width: 45%;
   }
+
+
 }
 
 /* 2. MOBILE VIEWPORTS (Less than 768px) */
@@ -1431,6 +1440,7 @@ div.slideButtons{
     flex-direction: column;
     gap: 15px;
     padding: 10px;
+
   }
   nav ul {
     flex-direction: row;
@@ -1449,12 +1459,14 @@ div.slideButtons{
   }
   .logo {
     width: 180px;
-    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 0px;
   }
 
   /* Core Hero typography scale down for small glass displays */
   .mainTitle {
     font-size: 40px;
+    margin-top: 50px !important;
   }
   .tagline {
     font-size: 24px;
