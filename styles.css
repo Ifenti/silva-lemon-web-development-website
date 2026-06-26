@@ -4,12 +4,12 @@
   box-sizing: border-box;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
 :root {
-  --navbar-height: 12vh; 
+  --navbar-height: 12vh;
 }
 
 body {
@@ -18,7 +18,6 @@ body {
   padding: 0;
   min-height: 100vh;
   background-color: black;
-
 }
 
 body::before {
@@ -54,7 +53,7 @@ nav {
   justify-content: space-between;
   align-items: center; 
   width: 100%; 
-  padding: 0 50px; 
+  padding: 0 50px;
 }
 
 .Logo, .contactButton {
@@ -76,7 +75,7 @@ nav {
   text-decoration: none;
   color: rgb(187, 187, 187);
   font-weight: 600;
-  font-size: 25px;
+  font-size: clamp(1.1rem, 1.2vw + 0.8rem, 2rem);
   transition: scale 0.3s ease-in-out, color 0.3s ease-in-out;
   border: #ffbe32 solid 2px;
   padding: 10px 30px;
@@ -92,7 +91,7 @@ nav {
 nav ul {
   display: flex;
   gap: 60px;
-  font-size: 25px;
+  font-size: clamp(1.1rem, 1.2vw + 0.8rem, 2rem);
   list-style: none;
   padding-left: 0px;
   margin: 0;
@@ -143,14 +142,14 @@ nav ul a:hover {
 }
 
 .mainTitle {
-  font-size: 80px;
+  font-size: clamp(3rem, 5vw + 1rem, 5rem);
   color: white;
   margin: 0 0 20px 0 !important;
   max-width: 100%; 
 }
 
 .tagline {
-  font-size: 40px;
+  font-size: clamp(1.5rem, 2vw + 1rem, 3rem);
   color: #ffb759;
   font-weight: bold;
   margin: 0 0 25px 0;
@@ -158,7 +157,7 @@ nav ul a:hover {
 }
 
 .description {
-  font-size: 22px;
+  font-size: clamp(1rem, 1vw + 0.6rem, 1.5rem);
   max-width: 895px; 
   width: 90%;      
   color: white;
@@ -168,7 +167,7 @@ nav ul a:hover {
 
 .learnmore {
   padding: 15px 45px;
-  font-size: 22px;
+  font-size: clamp(1rem, 1vw + 0.6rem, 1.5rem);
   font-weight: bold;
   font-family: 'Urbanist', sans-serif;
   color: white;
@@ -222,21 +221,21 @@ nav ul a:hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
 .box:hover {
   transform: translateY(-5px);
   box-shadow: 0 0 30px rgba(255, 190, 50, 0.5);
 }
 
 .shield {
-  font-size: 40px;
+  font-size: clamp(1.5rem, 2vw + 1rem, 3rem);
   color: #ffeaa2;
   margin-bottom: 25px;
   display: inline-block;
   filter: drop-shadow(0 0 8px rgba(255, 190, 50, 0.2));
 }
+
 .box h2 {
-  font-size: 26px;
+  font-size: clamp(1.2rem, 1.2vw + 0.8rem, 2rem);
   color: #ffeaa2;
   margin: 0 0 12px 0;
   font-weight: 700;
@@ -244,15 +243,14 @@ nav ul a:hover {
 }
 
 .box p {
-  font-size: 16px;
+  font-size: clamp(0.875rem, 0.8vw + 0.5rem, 1.25rem);
   line-height: 1.5;
   color: #fff4d7;
   margin: 0;
   text-align: center;
 }
 
-/*SERVICES*/
-.services{
+.services {
   min-height: 100vh;
   margin-top: 20vh;
   display: flex;
@@ -261,8 +259,8 @@ nav ul a:hover {
   justify-content: center;
 }
 
-.smallTitle{
-  font-size: 25px;
+.smallTitle {
+  font-size: clamp(1.1rem, 1.2vw + 0.8rem, 2rem);
   color: wheat;
   border: #fff5bc 2px solid;
   padding: 0px 30px;
@@ -271,24 +269,22 @@ nav ul a:hover {
   scale: 0.8;
 }
 
-
-.servicesTitle h1{
+.servicesTitle h1 {
   margin-top: 35px;
   color: rgb(255, 255, 255);
-  font-size: 55px;
+  font-size: clamp(2rem, 3vw + 1.5rem, 4.5rem);
 }
 
-.servicesTitle p{
+.servicesTitle p {
   color: rgb(255, 208, 121);
-  font-size: 25px;
+  font-size: clamp(1.1rem, 1.2vw + 0.8rem, 2rem);
   line-height: 35px;
   max-width: 70%;
   margin-left: auto;
   margin-right: auto;
 }
 
-
-.servicesTitle{
+.servicesTitle {
   text-align: center;
 }
 
@@ -318,7 +314,7 @@ nav ul a:hover {
 
 .slide-image {
   flex: 1.2;
-    position: relative;
+  position: relative;
   overflow: hidden;
 }
 
@@ -329,41 +325,37 @@ nav ul a:hover {
   display: block;
   object-fit: cover;
   border-radius: 25px;
-
 }
+
 .projectOverlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.65);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    opacity: 1;
-    transition: opacity 0.3s ease;
-    border-radius: 25px;
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  border-radius: 25px;
 }
 
 .projectOverlay2 {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.75);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    opacity: 1;
-    transition: opacity 0.3s ease;
-    border-radius: 25px;
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  border-radius: 25px;
 }
 
-.projectOverlay2 a, .projectOverlay a{
+.projectOverlay2 a, .projectOverlay a {
   color: #ffc400;
   font-weight: bold;
   text-underline-offset: 10px;
-  font-size: 25px;
+  font-size: clamp(1.1rem, 1.2vw + 0.8rem, 2rem);
 }
 
 .slide-info {
@@ -375,14 +367,14 @@ nav ul a:hover {
 }
 
 .slide-info h2 {
-  font-size: 32px;
+  font-size: clamp(1.5rem, 2vw + 0.8rem, 2.5rem);
   color: #ffeaa2;
   margin: 0 0 15px 0;
   font-weight: 700;
 }
 
 .slide-info p {
-  font-size: 16px;
+  font-size: clamp(0.875rem, 0.8vw + 0.5rem, 1.25rem);
   line-height: 1.6;
   color: #fff4d7;
   margin: 0 0 25px 0;
@@ -390,7 +382,7 @@ nav ul a:hover {
 
 .see-site-btn {
   padding: 12px 35px;
-  font-size: 18px;
+  font-size: clamp(1rem, 1vw + 0.5rem, 1.5rem);
   font-weight: bold;
   font-family: inherit;
   color: white;
@@ -408,11 +400,9 @@ nav ul a:hover {
   box-shadow: 0 0 15px rgba(255, 153, 0, 0.2);
 }
 
-
-
 .see-next-btn {
   padding: 12px 35px;
-  font-size: 18px;
+  font-size: clamp(1rem, 1vw + 0.5rem, 1.5rem);
   font-weight: bold;
   font-family: inherit;
   color: white;
@@ -424,10 +414,11 @@ nav ul a:hover {
   transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
 }
 
-.lighter{
+.lighter {
   color: #ffebc0;
   font-style: italic;
 }
+
 .see-next-btn:hover {
   transform: scale(1.05);
   background: #442f009d;
@@ -441,7 +432,7 @@ nav ul a:hover {
   transform: translateY(-50%);
   width: 60px;
   height: 60px;
-  font-size: 32px;
+  font-size: clamp(1.5rem, 2vw + 0.8rem, 2.5rem);
   color: #ffd16e;
   user-select: none;
   display: flex;
@@ -452,7 +443,6 @@ nav ul a:hover {
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
   z-index: 5;
   line-height: 60px;
-  
 }
 
 .prev {
@@ -479,7 +469,7 @@ nav ul a:hover {
 
 .numbertext {
   color: #717171;
-  font-size: 14px;
+  font-size: clamp(0.75rem, 0.5vw + 0.5rem, 1rem);
   padding: 8px 12px;
   position: absolute;
   top: 10px;
@@ -508,103 +498,87 @@ nav ul a:hover {
   animation-duration: 1s;
 }
 
-/* ==========================
-   TECH THEME
-========================== */
-
-.techTheme .slide-content{
-    border: 4px solid rgb(0, 132, 255);
+.techTheme .slide-content {
+  border: 4px solid rgb(0, 132, 255);
 }
 
 .techTheme h2 {
-    color: #0084ff;
+  color: #0084ff;
 }
 
 .techTheme .see-site-btn,
 .techTheme .see-next-btn {
-    background: #00415a60;
-    border-color: white;
-    box-shadow: #00b7ff20 0 0 20px;
+  background: #00415a60;
+  border-color: white;
+  box-shadow: #00b7ff20 0 0 20px;
 }
 
 .techTheme .viewButton {
-    color: #0097d3;
+  color: #0097d3;
 }
 
 .techTheme .numbertext {
-    color: #00638a;
-    font-weight: bold;
+  color: #00638a;
+  font-weight: bold;
 }
 
-/* ==========================
-   MEDICAL THEME
-========================== */
-
-.medicalTheme .slide-content{
-    border: 4px solid rgba(76, 209, 164, 1);
+.medicalTheme .slide-content {
+  border: 4px solid rgba(76, 209, 164, 1);
 }
 
 .medicalTheme h2 {
-    color: #4cd1a4;
+  color: #4cd1a4;
 }
 
 .medicalTheme .see-site-btn,
 .medicalTheme .see-next-btn {
-    background: #28866760;
-    border: #00bd9d 2px solid;
-    box-shadow: #00bd9d20 0 0 20px;
+  background: #28866760;
+  border: #00bd9d 2px solid;
+  box-shadow: #00bd9d20 0 0 20px;
 }
 
 .medicalTheme .viewButton {
-    color: #4cd1a4;
+  color: #4cd1a4;
 }
 
 .medicalTheme .numbertext {
-    color: #4cd1a4;
+  color: #4cd1a4;
 }
 
-/* ==========================
-   HANDYMAN THEME
-========================== */
-
-.handyTheme .slide-content{
-    border: 4px solid rgb(255, 149, 0);
+.handyTheme .slide-content {
+  border: 4px solid rgb(255, 149, 0);
 }
 
 .handyTheme h2 {
-    color: #ff9500;
+  color: #ff9500;
 }
 
 .handyTheme .see-site-btn,
 .handyTheme .see-next-btn {
-    background: #ff950046;
+  background: #ff950046;
 }
 
 .handyTheme .viewButton {
-    color: #ff9500;
+  color: #ff9500;
 }
 
 .handyTheme .numbertext {
-    color: #ff9500;
+  color: #ff9500;
 }
 
 .activeTech {
-    background: #00b7ff;
-    box-shadow: 0 0 15px rgba(0,183,255,.6);
+  background: #00b7ff;
+  box-shadow: 0 0 15px rgba(0,183,255,.6);
 }
-
-/* Medical */
 
 .activeMedical {
-    background: #4cd1a4;
-    box-shadow: 0 0 15px rgba(76,209,164,.6);
+  background: #4cd1a4;
+  box-shadow: 0 0 15px rgba(76,209,164,.6);
 }
 
-/* Handyman */
-
 .activeHandy {
-    background: #ff9500;
-    box-shadow: 0 0 15px rgba(255,149,0,.6);
+  background: #ff9500;
+  box-shadow: 0 0 15px rgba(255,149,0,.6);
 }
 
 @keyframes fade {
@@ -623,20 +597,20 @@ nav ul a:hover {
     text-align: center;
   }
   .prev, .next {
-    font-size: 18px;
+    font-size: clamp(1rem, 1.2vw + 0.5rem, 1.5rem);
   }
 }
 
-@media (max-width: 1400){
+@media (max-width: 1400) {
 
 }
 
-div.slideButtons{
+div.slideButtons {
   display: flex;
   gap: 20px;
 }
-/*about*/
-.about{
+
+.about {
   min-height: 100vh;
   margin-top: 20vh;
   display: flex;
@@ -646,103 +620,96 @@ div.slideButtons{
 }
 
 .aboutBoxes {
-    display: flex;
-    gap: 50px;
-    justify-content: center;
-    align-items: stretch;
-    flex-wrap: wrap;
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .aboutBox {
-    flex: 1;
-    min-width: 300px;
-    max-width: 500px;
-    background-color: rgba(255, 187, 86, 0.034);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    border: 3px solid rgba(255, 199, 17, 0.712);
-    box-shadow: 0 0 15px rgba(255, 122, 0, 0.1), inset 0 0 15px rgba(255, 122, 0, 0.05);
-    border-radius: 16px;
-    padding: 40px 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    transition: all 0.4s ease-in-out;
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  background-color: rgba(255, 187, 86, 0.034);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 3px solid rgba(255, 199, 17, 0.712);
+  box-shadow: 0 0 15px rgba(255, 122, 0, 0.1), inset 0 0 15px rgba(255, 122, 0, 0.05);
+  border-radius: 16px;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  transition: all 0.4s ease-in-out;
 }
 
 .aboutBox:hover {
-    transform: translateY(-5px);
-    border-color: rgba(255, 217, 0, 0.9);
-    box-shadow: 0 0 25px rgba(255, 122, 0, 0.2), inset 0 0 20px rgba(255, 122, 0, 0.15);
+  transform: translateY(-5px);
+  border-color: rgba(255, 217, 0, 0.9);
+  box-shadow: 0 0 25px rgba(255, 122, 0, 0.2), inset 0 0 20px rgba(255, 122, 0, 0.15);
 }
 
-
 .iconContainer {
-    color: #ffbb00;
-    font-size: 28px;
-    margin-bottom: 20px;
-    text-shadow: 0 0 10px rgba(255, 122, 0, 0.5);
+  color: #ffbb00;
+  font-size: clamp(1.2rem, 1.5vw + 0.5rem, 2rem);
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(255, 122, 0, 0.5);
 }
 
 .aboutBox h1 {
-    color: #ffffff;
-    font-size: 30px;
-    margin-bottom: 5px;
-    font-weight: 600;
+  color: #ffffff;
+  font-size: clamp(1.4rem, 1.5vw + 0.8rem, 2.2rem);
+  margin-bottom: 5px;
+  font-weight: 600;
 }
 
 .aboutBox p {
-    color: #cccccc;
-    font-size: 17px;
-    line-height: 1.6;
-    margin-bottom: 30px;
-    flex-grow: 1;
-    font-weight: 500;
+  color: #cccccc;
+  font-size: clamp(0.9rem, 0.8vw + 0.5rem, 1.2rem);
+  line-height: 1.6;
+  margin-bottom: 30px;
+  flex-grow: 1;
+  font-weight: 500;
 }
 
 .aboutButton {
-    background: transparent;
-    color: #ffe4bc;
-    border: 2px solid #ffa600;
-    padding: 12px 24px;
-    font-size: 15px;
-    font-weight: 500;
-    border-radius: 100px;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    transition: all 0.3s ease;
-    font-weight: 600;
+  background: transparent;
+  color: #ffe4bc;
+  border: 2px solid #ffa600;
+  padding: 12px 24px;
+  font-size: clamp(0.875rem, 0.8vw + 0.4rem, 1.2rem);
+  font-weight: 500;
+  border-radius: 100px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  font-weight: 600;
 }
 
 .aboutButton:hover {
-    background-color: #0c0907;
-    color: #2C1A10;
-    box-shadow: 0 0 15px rgba(255, 122, 0, 0.5);
-    font-weight: 600;
+  background-color: #0c0907;
+  color: #2C1A10;
+  box-shadow: 0 0 15px rgba(255, 122, 0, 0.5);
+  font-weight: 600;
 }
 
 .aboutButton i {
-    font-size: 12px;
-    transition: transform 0.2s ease;
+  font-size: clamp(0.6rem, 0.5vw + 0.3rem, 0.9rem);
+  transition: transform 0.2s ease;
 }
 
 .aboutButton:hover i {
-    transform: translateX(4px);
+  transform: translateX(4px);
 }
 
-
-
-
-
-
-/*pricing*/
-.pricing{
+.pricing {
   min-height: 100vh;
   margin-top: 30vh;
   display: flex;
@@ -751,26 +718,16 @@ div.slideButtons{
   justify-content: center;
 }
 
-.smallTitle{
-  font-size: 25px;
-  color: wheat;
-  border: #fff5bc 2px solid;
-  padding: 0px 30px;
-  border-radius: 100px;
-  font-weight: bold;
-  scale: 0.8;
-}
-
 .pricingContainer {
   width: 100%;              
-  max-width: 90%;       
+  max-width: 90%;
   display: flex;
   gap: 60px;               
   margin: 50px auto 0 auto;
   padding: 0 20px;         
   box-sizing: border-box;
   flex-wrap: wrap;         
-  justify-content: center; 
+  justify-content: center;
 }
 
 .priceBox {
@@ -785,6 +742,9 @@ div.slideButtons{
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   box-sizing: border-box;
+  border-radius: 20px;
+  border: solid 3px #ffc266;
+  box-shadow: #ffcf6681 0 0 20px;
 }
 
 .priceMain {
@@ -801,6 +761,7 @@ div.slideButtons{
   border: solid 3px #ffd000;
   box-shadow: #ffd000a4 0 0 20px;
   box-sizing: border-box;
+  border-radius: 20px;
 }
 
 @media (max-width: 900px) {
@@ -817,64 +778,51 @@ div.slideButtons{
   }
 }
 
-.textStuff{
+.textStuff {
   padding-left: 20px
 }
 
-.iconPic{
+.iconPic {
   width: 70px;
   border-radius: 20px;
 }
 
-.icon-price{
+.icon-price {
   margin-top: 20px;
   margin-bottom: -10px;
-}
-
-.icon-price {
-    /* Colors */
-    background-color: #FFA500; /* Orange background */
-    color: #3b2517;            /* Dark brown icon color */
-    
-    /* Sizing & Centering */
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    
-    /* Icon Size */
-    font-size: 22px; 
-    font-weight: bold;
-}
-.priceBox, .priceMain{
+  background-color: #FFA500;
+  color: #3b2517;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 20px;
+  font-size: clamp(1rem, 1.2vw + 0.5rem, 1.5rem);
+  font-weight: bold;
 }
 
-.priceBox h1, .priceMain h1{
-  font-size: 40px;
+.priceBox h1, .priceMain h1 {
+  font-size: clamp(1.8rem, 2.5vw + 1rem, 3.5rem);
 }
 
-.priceBox, .priceMain h4{
+.priceBox h4, .priceMain h4 {
   text-align: left;
-  font-size: 22px;
+  font-size: clamp(1rem, 1.2vw + 0.6rem, 1.5rem);
   max-width: 85%;
   color: #fff0c7;
   font-weight: normal;
 }
 
-.priceInfo{
+.priceInfo {
   font-weight: normal;
   margin-top: -10px;
 }
 
-
-.boldPriceMain{
+.boldPriceMain {
   color: #ffd000;
-  font-size: 40px;
+  font-size: clamp(1.8rem, 2.5vw + 1rem, 3.5rem);
 }
-
 
 .priceButton, .priceButtonSpecial {
   display: block;       
@@ -882,15 +830,12 @@ div.slideButtons{
   height: 60px;
   margin-left: auto;  
   margin-right: auto;
-  
   margin-top: 10px;
   margin-bottom: 20px;
-  
   border-radius: 10px;
-  font-size: 25px;
+  font-size: clamp(1.1rem, 1.2vw + 0.8rem, 2rem);
   font-weight: bold;
   text-align: center;    
-
   box-sizing: border-box; 
   padding: 0px 20px;       
   line-height: 60px;   
@@ -898,18 +843,18 @@ div.slideButtons{
   transition: all 0.3s ease-in-out;
 }
 
-.priceButtonSpecial{
+.priceButtonSpecial {
   background-color: #faab00;
   color: #6e4200;
   font-weight: bold;
   box-shadow: #ffc966a2 0 0 10px;
   border-width: 0px;
 }
+
 .priceButton:hover,
 .priceButtonSpecial:hover {
   transform: translateY(-5px);
   cursor: pointer;
-
 }
 
 .priceButtonSpecial:hover {
@@ -917,30 +862,18 @@ div.slideButtons{
   filter: brightness(1.01);
 }
 
-
-
-.priceMain h1{
+.priceMain h1 {
   color: #ffec95;
   text-shadow: #ffe6779a 0 0 20px;
 }
 
-.priceBox h4{
-  color: rgb(255, 221, 157);
-  max-width: 85%;
-}
-
-.boldPrice{
+.boldPrice {
   color: rgb(255, 217, 111);
-    font-size: 60px;
-    margin-bottom: 0px;
+  font-size: clamp(2.5rem, 3.5vw + 1.5rem, 5rem);
+  margin-bottom: 0px;
 }
 
-.priceBox{
-  border: solid 3px #ffc266;
-  box-shadow: #ffcf6681 0 0 20px;
-}
-
-.priceButton{
+.priceButton {
   background-color: rgba(255, 187, 86, 0.137);
   color: rgb(255, 221, 189);
   box-shadow: #ff990085 0 0 20px;
@@ -948,18 +881,18 @@ div.slideButtons{
   border: 2px solid #ffc774;
 }
 
-.describe{
-  font-size: 20px;
+.describe {
+  font-size: clamp(1rem, 1vw + 0.6rem, 1.5rem);
   color: rgb(255, 221, 148) !important;
   margin-top: 0px;
 }
 
-.feautures{
+.feautures {
   margin-top: 10px;
 }
 
-.starting{
-  font-size: 20px;
+.starting {
+  font-size: clamp(1rem, 1vw + 0.6rem, 1.5rem);
   margin-bottom: -20px;
 }
 
@@ -973,116 +906,116 @@ div.slideButtons{
 }
 
 .contactSection {
-    padding: 80px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .contactContainer {
-    width: 100%;
-    max-width: 900px;
-    background-color: rgba(255, 200, 0, 0.035);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    border: 3px solid #ffc800c7;
-    border-radius: 20px;
-    padding: 50px;
+  width: 100%;
+  max-width: 900px;
+  background-color: rgba(255, 200, 0, 0.035);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 3px solid #ffc800c7;
+  border-radius: 20px;
+  padding: 50px;
 }
 
 .contactHeader {
-    text-align: center;
-    margin-bottom: 45px;
+  text-align: center;
+  margin-bottom: 45px;
 }
 
 .contactHeader h2 {
-    color: #ffffff;
-    font-size: 36px;
-    margin-bottom: 12px;
-    font-weight: 700;
-    letter-spacing: -0.5px;
-    text-shadow: 0 0 15px rgba(255, 200, 0, 0.103);
+  color: #ffffff;
+  font-size: clamp(1.8rem, 2vw + 1rem, 3rem);
+  margin-bottom: 12px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  text-shadow: 0 0 15px rgba(255, 200, 0, 0.103);
 }
 
 .contactHeader p {
-    color: #fff1b1;
-    font-size: 22px;
-    text-shadow: 0 0 10px rgba(255, 200, 0, 0.2);
+  color: #fff1b1;
+  font-size: clamp(1rem, 1.2vw + 0.6rem, 1.5rem);
+  text-shadow: 0 0 10px rgba(255, 200, 0, 0.2);
 }
 
 .contactForm {
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
 }
 
 .inputRow {
-    display: flex;
-    gap: 28px;
+  display: flex;
+  gap: 28px;
 }
 
 .inputGroup {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .inputGroup label {
-    color: #ffc800;
-    font-size: 15px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    text-shadow: 0 0 8px rgba(255, 200, 0, 0.3);
+  color: #ffc800;
+  font-size: clamp(0.875rem, 0.8vw + 0.4rem, 1.2rem);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-shadow: 0 0 8px rgba(255, 200, 0, 0.3);
 }
 
 .contactForm input,
 .contactForm select,
 .contactForm textarea {
-    background-color: rgba(0, 0, 0, 0.11);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    border: 3px solid rgba(255, 200, 0, 0.808);
-    border-radius: 10px;
-    padding: 16px 20px;
-    color: #ffffff;
-    font-size: 17px;
-    outline: none;
-    font-family: inherit;
-    transition: all 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.11);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 3px solid rgba(255, 200, 0, 0.808);
+  border-radius: 10px;
+  padding: 16px 20px;
+  color: #ffffff;
+  font-size: clamp(0.9rem, 0.8vw + 0.5rem, 1.2rem);
+  outline: none;
+  font-family: inherit;
+  transition: all 0.3s ease;
 }
 
 .contactForm select {
-    appearance: none;
-    -webkit-appearance: none;
-    background-image: url("data:image/svg+xml;utf8,<svg fill='%23ffc800' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
-    background-repeat: no-repeat;
-    background-position: right 20px center;
-    padding-right: 50px;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%23ffc800' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  padding-right: 50px;
 }
 
 .contactForm select option {
-    background-color: #261e00;
-    color: #ffffff;
-    padding: 10px;
+  background-color: #261e00;
+  color: #ffffff;
+  padding: 10px;
 }
 
 .contactForm input:focus,
 .contactForm select:focus,
 .contactForm textarea:focus {
-    border-color: #ffc800;
-    box-shadow: 0 0 20px rgba(255, 200, 0, 0.1);
-    background-color: rgba(255, 200, 0, 0.12);
+  border-color: #ffc800;
+  box-shadow: 0 0 20px rgba(255, 200, 0, 0.1);
+  background-color: rgba(255, 200, 0, 0.12);
 }
 
 .contactForm input::placeholder,
-.contactForm textarea::placeholder
+.contactForm textarea::placeholder,
 .contactForm select {
-    color: #ffffff;
-    opacity: 0.3;
-    font-weight: 600;
+  color: #ffffff;
+  opacity: 0.3;
+  font-weight: 600;
 }
 
 .contactForm input:-webkit-autofill,
@@ -1094,78 +1027,47 @@ div.slideButtons{
 .contactForm textarea:-webkit-autofill,
 .contactForm textarea:-webkit-autofill:hover,
 .contactForm textarea:-webkit-autofill:focus {
-    -webkit-text-fill-color: #ffffff;
-    box-shadow: 0 0 0px 1000px #1a1500 inset, 0 0 20px rgba(255, 200, 0, 0.4);
-    border-color: #ffc800;
-    transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: #ffffff;
+  box-shadow: 0 0 0px 1000px #1a1500 inset, 0 0 20px rgba(255, 200, 0, 0.4);
+  border-color: #ffc800;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 .contactForm textarea {
-    resize: vertical;
+  resize: vertical;
 }
 
-
 .submitButton {
-    background: transparent;
-    color: #ffffff;
-    border: 2px solid #ffc800;
-    padding: 16px 36px;
-    font-size: 18px;
-    font-weight: 700;
-    border-radius: 10px;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    margin-top: 15px;
-    letter-spacing: 0.5px;
-    transition: all 0.3s ease;
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid #ffc800;
+  padding: 16px 36px;
+  font-size: clamp(1rem, 1vw + 0.5rem, 1.5rem);
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 15px;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
 }
 
 .submitButton:hover {
-    color: #fff6d3;
-    box-shadow: 0 0 10px #ffc80031;
-    scale: 1.05;
+  color: #fff6d3;
+  box-shadow: 0 0 10px #ffc80031;
+  scale: 1.05;
 }
 
 .submitButton i {
-    font-size: 15px;
-    transition: transform 0.3s ease;
+  font-size: clamp(0.875rem, 0.8vw + 0.4rem, 1.2rem);
+  transition: transform 0.3s ease;
 }
 
 .submitButton:hover i {
-    transform: translate(4px, -4px);
-}
-
-@media (max-width: 768px) {
-    .inputRow {
-        flex-direction: column;
-        gap: 28px;
-    }
-    
-    .contactContainer {
-        padding: 35px 25px;
-    }
-    
-    .contactHeader h2 {
-        font-size: 30px;
-    }
-}
-
-@media (max-width: 768px) {
-    .inputRow {
-        flex-direction: column;
-        gap: 28px;
-    }
-    
-    .contactContainer {
-        padding: 35px 25px;
-    }
-    
-    .contactHeader h2 {
-        font-size: 30px;
-    }
+  transform: translate(4px, -4px);
 }
 
 footer {
@@ -1174,7 +1076,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   box-shadow: #ffe0328f 0 0 30px;
-  position: relative; 
+  position: relative;
   overflow: hidden;
   min-height: 75vh; 
   margin-top: 30vh;   
@@ -1182,25 +1084,23 @@ footer {
   -webkit-backdrop-filter: blur(6px);
 }
 
-
-
 footer > * {
   position: relative;
   z-index: 2;
 }
 
-footer h1{
-  font-size: 40px;
+footer h1 {
+  font-size: clamp(1.8rem, 2.5vw + 1rem, 3.5rem);
   text-align: center;
   margin-top: 80px;
   color: white;
   margin-bottom: 7px;
 }
 
-.footerSubtitle{
-    font-size: 30px;
+.footerSubtitle {
+  font-size: clamp(1.4rem, 1.5vw + 0.8rem, 2.5rem);
   text-align: center;
-  margin-top:20px;
+  margin-top: 20px;
   color: rgb(255, 197, 73);
   margin-bottom: 0px;
 }
@@ -1213,7 +1113,7 @@ footer h1{
   scale: 0.8;
 }
 
-.footerPart{
+.footerPart {
   width: 200px;
   display: flex;
   flex-direction: column;
@@ -1221,16 +1121,18 @@ footer h1{
   justify-content: center;
 }
 
-.footerPart h2{
+.footerPart h2 {
   color: white;
-  font-size: 40px;
+  font-size: clamp(1.8rem, 2.5vw + 1rem, 3.5rem);
   text-align: center;
 }
-.footerPart h3{
-  font-size: 25px;
+
+.footerPart h3 {
+  font-size: clamp(1.1rem, 1.2vw + 0.8rem, 2rem);
   margin: 12px;
 }
-.links{
+
+.links {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1239,38 +1141,36 @@ footer h1{
   margin-bottom: -10px;
 }
 
-footer a, footer a:active, footer a:visited{
+footer a, footer a:active, footer a:visited {
   color: rgb(255, 222, 151);
-  text-decoration:none;
+  text-decoration: none;
 }
 
-.line{
+.line {
   width: 80%;
   background-color: #ffc830;
   height: 5px;
   margin-right: auto;
   margin-left: auto;
-    margin-top: 0px;
-  margin-bottom:20px;
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
 
-
-.line h6{
-  font-size: 0px;
-
+.line h6 {
+  font-size: 0;
 }
 
-.pricetextMain{
+.pricetextMain {
   color: rgb(255, 220, 123) !important;
 }
 
-.copyright{
+.copyright {
   text-align: center;
   margin-bottom: 50px;
 }
 
-.footerCopyright h3{
-  font-size: 20px;
+.footerCopyright h3 {
+  font-size: clamp(1rem, 1vw + 0.6rem, 1.5rem);
   color: #ffc64a;
 }
 
@@ -1284,80 +1184,59 @@ footer a:hover {
   transform: scale(1.1);
 }
 
-
-
-
 .animate {
-    opacity: 0;
-    transition:
-        opacity 0.8s ease,
-        transform 0.8s ease;
-    will-change: opacity, transform;
+  opacity: 0;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  will-change: opacity, transform;
 }
-
-/* ACTIVE STATE */
 
 .animate.show {
-    opacity: 1;
-    transform: translate(0,0) scale(1);
+  opacity: 1;
+  transform: translate(0,0) scale(1);
 }
-
-/* FROM BOTTOM */
 
 .slide-up {
-    transform: translateY(80px);
+  transform: translateY(80px);
 }
-
-/* FROM TOP */
 
 .slide-down {
-    transform: translateY(-80px);
+  transform: translateY(-80px);
 }
-
-/* FROM LEFT */
 
 .slide-left {
-    transform: translateX(-80px);
+  transform: translateX(-80px);
 }
-
-/* FROM RIGHT */
 
 .slide-right {
-    transform: translateX(80px);
+  transform: translateX(80px);
 }
-
-/* SCALE */
 
 .scale-in {
-    transform: scale(0.8);
+  transform: scale(0.8);
 }
-
-/* FADE ONLY */
 
 .fade-in {
-    transform: translateY(0);
+  transform: translateY(0);
 }
 
-/* STAGGER SUPPORT */
-
 .delay-1 {
-    transition-delay: 0.1s;
+  transition-delay: 0.1s;
 }
 
 .delay-2 {
-    transition-delay: 0.2s;
+  transition-delay: 0.2s;
 }
 
 .delay-3 {
-    transition-delay: 0.3s;
+  transition-delay: 0.3s;
 }
 
 .delay-4 {
-    transition-delay: 0.4s;
+  transition-delay: 0.4s;
 }
 
 .delay-5 {
-    transition-delay: 0.5s;
+  transition-delay: 0.5s;
 }
 
 @keyframes fade {
@@ -1365,153 +1244,163 @@ footer a:hover {
   to {opacity: 1}
 }
 
-div.slideButtons{
+div.slideButtons {
   display: flex;
   gap: 20px;
 }
 
-/* ==========================================================================
-   NEW RESPONSIVE MEDIA QUERIES (ADD TO BOTTOM)
-   ========================================================================== */
 
-/* 1. LESS THAN 1333px BREAKPOINT (Desktop resizing & Small screens) */
 @media screen and (max-width: 1333px) {
-  body{
+  body {
     overflow-x: hidden;
   }
 
-  /* Scale down the massive fonts slightly so they don't break lines awkwardly */
   .mainTitle {
-    font-size: 60px;
-    
+    font-size: clamp(2.5rem, 4vw + 1rem, 4rem);
   }
 
   .tagline {
-    font-size: 32px;
+    font-size: clamp(1.5rem, 2vw + 1rem, 2.5rem);
   }
   
-  /* Navigation spacing collapses smoothly */
   nav {
     padding: 0 20px;
   }
+
   nav ul {
     gap: 23px;
-    font-size: 18px;
+    font-size: clamp(1rem, 1.2vw + 0.5rem, 1.25rem);
   }
+
   .contact {
-    font-size: 20px;
+    font-size: clamp(1rem, 1.2vw + 0.5rem, 1.5rem);
     padding: 8px 20px;
   }
 
-  .logo{
+  .logo {
     width: 200px;
   }
 
-  /* Slide panel structural adjustments */
   .slideshow-container {
     max-width: 95%;
     padding: 0 40px;
   }
 
-  .aboutBoxes{
+  .aboutBoxes {
     gap: 30px;
   }
+
   .slide-content, .slide-info-row {
-    height: auto; /* Drops the rigid 400px constraint */
+    height: auto;
     padding: 40px 20px;
   }
   
-  /* Flexboxes swap to rows/columns smoothly */
   .boxes {
     flex-wrap: wrap;
     gap: 20px;
   }
+
   .box {
     max-width: 45%;
   }
-
-
 }
 
-/* 2. MOBILE VIEWPORTS (Less than 768px) */
 @media screen and (max-width: 768px) {
-  /* Navigation menu stacks vertically for phones */
   nav {
     flex-direction: column;
     gap: 15px;
     padding: 10px;
-
   }
+
   nav ul {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
-    font-size: 16px;
+    font-size: clamp(0.875rem, 1vw + 0.5rem, 1.125rem);
   }
+
   .contactButton {
     justify-content: center;
     margin-right: 0;
   }
+
   .contact {
-    font-size: 16px;
+    font-size: clamp(0.875rem, 1vw + 0.5rem, 1.125rem);
     padding: 6px 16px;
   }
+
   .logo {
     width: 180px;
     margin-top: 50px;
     margin-bottom: 0px;
   }
 
-  /* Core Hero typography scale down for small glass displays */
   .mainTitle {
-    font-size: 40px;
+    font-size: clamp(2rem, 3vw + 0.5rem, 3rem);
     margin-top: 50px !important;
   }
+
   .tagline {
-    font-size: 24px;
+    font-size: clamp(1.25rem, 1.5vw + 0.5rem, 1.75rem);
   }
+
   .description {
-    font-size: 16px;
+    font-size: clamp(0.875rem, 1vw + 0.5rem, 1.125rem);
   }
+
   .title {
     height: auto;
     padding-top: 180px;
     gap: 40px;
   }
 
-  /* Service boxes go full single-column block layout */
   .box {
     max-width: 100%;
     flex: 1 1 100%;
   }
 
-  /* Slideshow content items switch to columns */
   .slide-content, .slide-info-row {
     flex-direction: column;
     height: auto;
     padding: 20px;
     gap: 15px;
   }
+
   .slide-info {
     align-items: center;
     text-align: center;
   }
+
   .slide-info h2 {
-    font-size: 24px;
+    font-size: clamp(1.25rem, 1.5vw + 0.5rem, 1.75rem);
   }
 
-  /* Footer containers collapse smoothly */
+  .inputRow {
+    flex-direction: column;
+    gap: 28px;
+  }
+    
+  .contactContainer {
+    padding: 35px 25px;
+  }
+    
+  .contactHeader h2 {
+    font-size: clamp(1.5rem, 2vw + 0.8rem, 2rem);
+  }
+
   .contentFooter {
     flex-direction: column;
     gap: 40px;
     align-items: center;
-    scale: 1; /* Cleans up the forced shrink */
+    scale: 1; 
   }
+
   footer h1 {
-    font-size: 28px;
+    font-size: clamp(1.5rem, 2vw + 0.5rem, 2rem);
   }
+
   .footerSubtitle {
-    font-size: 20px;
+    font-size: clamp(1rem, 1.2vw + 0.5rem, 1.5rem);
   }
 }
