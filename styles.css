@@ -304,7 +304,7 @@ nav ul a:hover {
 .slide-content, .slide-info-row {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 60px;
   background: rgba(0, 0, 0, 0.1);
   border: 3px solid rgba(255, 190, 50, 0.9);
   border-radius: 20px;
@@ -550,7 +550,7 @@ nav ul a:hover {
 
 .handyTheme .see-site-btn,
 .handyTheme .see-next-btn {
-  background: #ff950046;
+  background: #ff950036;
   border: 2px solid #ff9500;
   box-shadow: #ff950030 0 0 20px;
 }
