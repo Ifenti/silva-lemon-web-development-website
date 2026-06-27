@@ -110,7 +110,7 @@ header::after {
 .navbar {
     width: 90%;
     max-width: 1200px;
-    margin-top: 2rem;
+    margin-top: 3rem;
     justify-content: space-between;
     display: flex;
     align-items: center;
@@ -582,7 +582,7 @@ header::after {
 .locationItems {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 4rem;
     width: 100%;
     max-width: 1200px;
     margin: 4rem auto 0;
@@ -711,7 +711,7 @@ footer h1 {
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
-    gap: 3rem;
+    gap: 0rem;
     margin: 2rem 0;
 }
 
@@ -774,6 +774,7 @@ footer a:hover {
     font-size: 1rem;
     color: #006964;
     margin: 0;
+    margin-bottom: 1rem;
 }
 
 .animate {
