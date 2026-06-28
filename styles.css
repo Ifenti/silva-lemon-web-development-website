@@ -366,7 +366,7 @@ nav ul a:hover {
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap: 30px;
+  gap: 20px;
   height: 100%;
   width: 90%;
   margin-right: 2vh;
@@ -503,7 +503,7 @@ nav ul a:hover {
 
 .techTheme .see-site-btn,
 .techTheme .see-next-btn {
-  background: #002a5a73;
+  background: #087bff33;
   border-color: rgb(166, 202, 255);
   box-shadow: #00b7ff20 0 0 20px;
 }
