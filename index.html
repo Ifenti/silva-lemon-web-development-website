@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-        <!-- Light Mode Favicon -->
+    <!-- Light Mode Favicon -->
     <link rel="icon" href="icon.png" media="(prefers-color-scheme: light)">
     <!-- Dark Mode Favicon -->
     <link rel="icon" href="icondark.png" media="(prefers-color-scheme: dark)">
@@ -17,9 +17,9 @@
 
 
     <meta property="og:title" content="Silva Lemon Web Development | Professional Website Developers" />
-<meta property="og:description" content="Converting Ideas into high quality, hand coded sites" />
-<meta property="og:image" content="portfolio.png" />
-<meta property="og:url" content="https://ifenti.github.io/silva-lemon-web-development-website/" />
+    <meta property="og:description" content="Converting Ideas into high quality, hand coded sites" />
+    <meta property="og:image" content="portfolio.png" />
+    <meta property="og:url" content="https://ifenti.github.io/silva-lemon-web-development-website/" />
 </head>
 
 <body>
@@ -32,7 +32,7 @@
                 <ul class="animate slide-left">
                     <li><a href="#hero" class="activeLink">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
+                    <li><a href="#services">Our Work</a></li>
                     <li><a href="#prices">Pricing</a></li>
                     <div class="contactButton">
                         <a href="#contact" class="contact">Contact</a>
@@ -89,7 +89,8 @@
                 <p>We are a small web development studio based in the UK. We focus on building fast, clean, and reliable
                     websites tailored specifically for small businesses and freelancers looking to grow their digital
                     presence.</p>
-                <button class="aboutButton" onclick="document.location.href = '#contact'">Talk to us <i class="fa-solid fa-arrow-right"></i></button>
+                <button class="aboutButton" onclick="document.location.href = '#contact'">Talk to us <i
+                        class="fa-solid fa-arrow-right"></i></button>
             </div>
 
             <!-- Box 2: What We Do -->
@@ -101,105 +102,116 @@
                 <p>We design and develop high-quality, fully responsive custom sites from scratch. No bloated
                     builders—just optimized code, smooth layouts, and clean forms built exactly to your project's scope.
                 </p>
-                <button class="aboutButton" onclick="document.location.href='#services'">Our services <i class="fa-solid fa-arrow-right"></i></button>
+                <button class="aboutButton" onclick="document.location.href='#services'">Our services <i
+                        class="fa-solid fa-arrow-right"></i></button>
             </div>
         </div>
 
     </section>
 
 
-    <section class="services" id="services">
-        <div class="smallTitle animate fade-in">
-            <p>Services</p>
-        </div>
-        <div class="servicesTitle animate slide-up">
-            <h1>What we offer</h1>
-            <p>We offer a wide range of site styles, including modern, minimalistic, cyberpunk, clean and many more.
-                <b>Here are some of our templates:</b> <br><span class="lighter">(Note that your desired design
-                    <b>doesn't</b> have to fit these themes)</b></span></p>
+<section class="services" id="services">
+    <div class="smallTitle animate fade-in">
+        <p>Our Work</p>
+    </div>
+    <div class="servicesTitle animate slide-up">
+        <h1>What we've made</h1>
+        <p>We offer a wide range of site styles, including modern, minimalistic, cyberpunk, clean and many more.
+            <b>Here are some of our templates:</b> <br><span class="lighter">(Note that your desired design
+                <b>doesn't</b> have to fit these themes)</b></span>
+        </p>
+    </div>
+
+    <div class="slideshow-container animate scale-in">
+        <div class="mySlides fade techTheme">
+            <div class="slide-content">
+                <div class="slide-image">
+                    <img src="cyberImage.png" alt="Template One" class="Tech">
+                    <div class="projectOverlay">
+                        <a href="techsite-template/index.html" class="viewButton">View Live Site ↗</a>
+                    </div>
+                </div>
+                <div class="slide-info">
+                    <h2>Cyber Company</h2>
+                    <p>A razor-sharp, high-voltage landing page design featuring neon terminal accents and dark-mode
+                        styling built for advertising modern security platforms.</p>
+                    <div class="slideButtons">
+                        <button class="see-site-btn"
+                            onclick="document.location.href = 'techsite-template/index.html';">View</button>
+                        <button class="see-next-btn" onclick="plusSlides(1)">Next ></button>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="slideshow-container animate scale-in">
+        <div class="mySlides fade medicalTheme">
+            <div class="slide-content">
+                <div class="slide-image">
+                    <img src="healthCare.png" alt="Template Two" class="med">
+                    <div class="projectOverlay2">
+                        <a href="medical-template/index.html" class="viewButton">View Live Site ↗</a>
+                    </div>
+                </div>
+                <div class="slide-info">
+                    <h2>Medical Site</h2>
+                    <p>A clean, modern medical website template designed to inspire trust and professionalism,
+                        perfect for GP practices, clinics, and healthcare providers.</p>
+                    <div class="slideButtons">
+                        <button class="see-site-btn"
+                            onclick="document.location.href = 'medical-template/index.html';">View</button>
+                        <button class="see-next-btn" onclick="plusSlides(1)">Next ></button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="mySlides fade handyTheme">
+            <div class="slide-content">
+                <div class="slide-image">
+                    <img src="handyMan.png" alt="Template Three" class="med">
+                    <div class="projectOverlay">
+                        <a href="localfreelancer/index.html" class="viewButton">View Live Site ↗</a>
+                    </div>
+                </div>
+                <div class="slide-info">
+                    <h2 class="handiman">Handyman Site</h2>
+                    <p class="handimanp">A modern design with vibrant showcases and an easy-to-navigate layout. It
+                        features a services section, perfect for a contractor trying to showcase their skills.</p>
+                    <div class="slideButtons">
+                        <button class="see-site-btn handy"
+                            onclick="document.location.href = 'localfreelancer/index.html';">View</button>
+                        <button class="see-next-btn handy" onclick="plusSlides(1)">Next ></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div style="text-align:center" class="animate fade-in delay-2">
+        <span class="dot techDot" onclick="currentSlide(1)"></span>
+        <span class="dot mediDot" onclick="currentSlide(2)"></span>
+        <span class="dot handyDot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <div class="ourWork">
+        <h1 class="secondaryTitle">Official Work</h1>
+        <p>Here are some official projects we've completed - come take a look!</p>
+        
+        <div class="slideshow-container" style="display: flex; justify-content: center; align-items: center; min-height: 200px; border: 1px dashed #ccc; padding: 20px; margin-top: 5rem;">
+            <p style="text-align: center; color: #888;">We haven't completed any work yet, sorry!</p>
+            
+            <!--
             <div class="mySlides fade techTheme">
-                <!--<div class="numbertext">1 / 3</div> -->
                 <div class="slide-content">
-                    <div class="slide-image">
-                        <img src="cyberImage.png" alt="Template One" class="Tech">
-
-                        <div class="projectOverlay">
-                            <a href="techsite-template/index.html" class="viewButton">View Live Site ↗</a>
-                        </div>
-                    </div>
-                    <div class="slide-info">
-                        <h2>Cyber Company</h2>
-                        <p>A razor-sharp, high-voltage landing page design featuring neon terminal accents and dark-mode
-                            styling built for advertising modern security platforms.</p>
-
-                        <div class="slideButtons">
-                            <button class="see-site-btn"
-                                onclick="document.location.href = 'techsite-template/index.html';">View</button>
-                            <button class="see-next-btn" onclick="plusSlides(1)">Next ></button>
-                        </div>
-                    </div>
+                    ... (your future project code)
                 </div>
             </div>
-
-            <div class="mySlides fade medicalTheme">
-                <!--<div class="numbertext">2 / 3</div> -->
-                <div class="slide-content">
-                    <div class="slide-image">
-                        <img src="healthCare.png" alt="Template Two" class="med">
-                        <div class="projectOverlay2">
-                            <a href="medical-template/index.html" class="viewButton">View Live Site ↗</a>
-                        </div>
-                    </div>
-                    <div class="slide-info">
-                        <h2>Medical Site</h2>
-                        <p>A clean, modern medical website template designed to inspire trust and professionalism,
-                            perfect for GP practices, clinics, and healthcare providers.</p>
-                        <div class="slideButtons">
-                            <button class="see-site-btn"
-                                onclick="document.location.href = 'medical-template/index.html';">View</button>
-                            <button class="see-next-btn" onclick="plusSlides(1)">Next ></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="mySlides fade handyTheme">
-                <!--<div class="numbertext">3 / 3</div> -->
-                <div class="slide-content">
-                    <div class="slide-image">
-                        <img src="handyMan.png" alt="Template Three" class="med">
-                        <div class="projectOverlay">
-                            <a href="localfreelancer/index.html" class="viewButton">View Live Site ↗</a>
-                        </div>
-                    </div>
-                    <div class="slide-info">
-                        <h2 class="handiman">Handyman Site</h2>
-                        <p class="handimanp">A modern design with vibrant showcases and an easy-to-navigate layout. It features a services section, perfect for a contractor trying to showcase their skills.</p>
-                        <div class="slideButtons">
-                            <button class="see-site-btn handy"
-                                onclick="document.location.href = 'localfreelancer/index.html';">View</button>
-                            <button class="see-next-btn handy" onclick="plusSlides(1)">Next ></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
+            -->
         </div>
-
-        <br>
-
-        <div style="text-align:center" class="animate fade-in delay-2">
-            <span class="dot techDot" onclick="currentSlide(1)"></span>
-            <span class="dot mediDot" onclick="currentSlide(2)"></span>
-            <span class="dot handyDot" onclick="currentSlide(3)"></span>
-        </div>
-
-    </section>
+    </div>
+</section>
 
 
 
@@ -397,69 +409,69 @@
 
 
 
-<script>
-document.addEventListener("DOMContentLoaded", () => {
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
 
-    let slideIndex = 1;
+            let slideIndex = 1;
 
-    window.plusSlides = function(n) {
-        showSlides(slideIndex += n);
-    }
-
-    window.currentSlide = function(n) {
-        showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-
-        if (n > slides.length) {
-            slideIndex = 1;
-        }
-
-        if (n < 1) {
-            slideIndex = slides.length;
-        }
-
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-
-        for (i = 0; i < dots.length; i++) {
-            dots[i].classList.remove(
-                "active",
-                "activeTech",
-                "activeMedical",
-                "activeHandy"
-            );
-        }
-
-        slides[slideIndex - 1].style.display = "block";
-
-        if (dots.length >= 3) {
-
-            if (slideIndex === 1) {
-                dots[0].classList.add("active", "activeTech");
+            window.plusSlides = function (n) {
+                showSlides(slideIndex += n);
             }
 
-            if (slideIndex === 2) {
-                dots[1].classList.add("active", "activeMedical");
+            window.currentSlide = function (n) {
+                showSlides(slideIndex = n);
             }
 
-            if (slideIndex === 3) {
-                dots[2].classList.add("active", "activeHandy");
+            function showSlides(n) {
+
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+
+                if (n > slides.length) {
+                    slideIndex = 1;
+                }
+
+                if (n < 1) {
+                    slideIndex = slides.length;
+                }
+
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].classList.remove(
+                        "active",
+                        "activeTech",
+                        "activeMedical",
+                        "activeHandy"
+                    );
+                }
+
+                slides[slideIndex - 1].style.display = "block";
+
+                if (dots.length >= 3) {
+
+                    if (slideIndex === 1) {
+                        dots[0].classList.add("active", "activeTech");
+                    }
+
+                    if (slideIndex === 2) {
+                        dots[1].classList.add("active", "activeMedical");
+                    }
+
+                    if (slideIndex === 3) {
+                        dots[2].classList.add("active", "activeHandy");
+                    }
+
+                }
             }
 
-        }
-    }
+            showSlides(slideIndex);
 
-    showSlides(slideIndex);
-
-});
-</script>
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 
