@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Silva Lemon Web Development</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Light Mode Favicon -->
+    <link rel="icon" href="icon.png" media="(prefers-color-scheme: light)">
+    <!-- Dark Mode Favicon -->
+    <link rel="icon" href="icondark.png" media="(prefers-color-scheme: dark)">
+
+
+
+    <meta property="og:title" content="Silva Lemon Web Development | Professional Website Developers" />
+    <meta property="og:description" content="Converting Ideas into high quality, hand coded sites" />
+    <meta property="og:image" content="portfolio.png" />
+    <meta property="og:url" content="https://ifenti.github.io/silva-lemon-web-development-website/" />
+</head>
+
+<body>
+    <section class="header" id="hero">
+        <div class="navbar">
+            <nav>
+                <div class="Logo animate slide-right">
+                    <img src="logowhite.png" class="logo">
+                </div>
+                <ul class="animate slide-left">
+                    <li><a href="#hero" class="activeLink">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Our Work</a></li>
+                    <li><a href="#prices">Pricing</a></li>
+                    <div class="contactButton">
+                        <a href="#contact" class="contact">Contact</a>
+                    </div>
+                </ul>
+
+            </nav>
+        </div>
+
+        <div class="title">
+            <div class="titleTextContent animate slide-up">
+                <h1 class="mainTitle">Need a website?</h1>
+                <h3 class="tagline">Need it fast? or cheap?</h3>
+                <p class="description">No need to look any further, at Silva Lemon Web Development, we can do both for
+                    you!</p>
+            </div>
+
+            <div class="boxes">
+                <div class="box animate slide-up">
+                    <i class="fa-solid fa-bolt shield"></i>
+                    <h2>Fast Sites</h2>
+                    <p>Optimized performance and lightning-fast loading speeds to keep your visitors engaged.</p>
+                </div>
+                <div class="box animate slide-up delay-1">
+                    <i class="fa-solid fa-bezier-curve shield"></i>
+                    <h2>Modern Design</h2>
+                    <p>Sleek, responsive layouts tailored beautifully to match your unique brand identity.</p>
+                </div>
+                <div class="box animate slide-up delay-1">
+                    <i class="fa-solid fa-code shield"></i>
+                    <h2>Hand Coded</h2>
+                    <p>Clean, custom development built from scratch without bloated page builders.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="smallTitle animate fade-in">
+            <p>About</p>
+        </div>
+        <div class="servicesTitle animate slide-up">
+            <h1>About us</h1>
+            <p>Get to know us more — our story, our process, and our work. Discover how we bridge clean design with
+                solid code to build professional sites</p>
+        </div>
+        <div class="aboutBoxes">
+            <!-- Box 1: Who We Are -->
+            <div class="aboutBox animate slide-left">
+                <div class="iconContainer">
+                    <i class="fa-solid fa-user-group"></i>
+                </div>
+                <h1>Who we are</h1>
+                <p>We are a small web development studio based in the UK. We focus on building fast, clean, and reliable
+                    websites tailored specifically for small businesses and freelancers looking to grow their digital
+                    presence.</p>
+                <button class="aboutButton" onclick="document.location.href = '#contact'">Talk to us <i
+                        class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <!-- Box 2: What We Do -->
+            <div class="aboutBox animate slide-right delay-1">
+                <div class="iconContainer">
+                    <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <h1>What we do</h1>
+                <p>We design and develop high-quality, fully responsive custom sites from scratch. No bloated
+                    builders—just optimized code, smooth layouts, and clean forms built exactly to your project's scope.
+                </p>
+                <button class="aboutButton" onclick="document.location.href='#services'">Our services <i
+                        class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+
+    </section>
+
+
+<section class="services" id="services">
+    <div class="smallTitle animate fade-in">
+        <p>Our Work</p>
+    </div>
+    <div class="servicesTitle animate slide-up">
+        <h1>What we've made</h1>
+        <p>We offer a wide range of site styles, including modern, minimalistic, cyberpunk, clean and many more.
+            <b>Here are some of our templates:</b> <br><span class="lighter">(Note that your desired design
+                <b>doesn't</b> have to fit these themes)</b></span>
+        </p>
+    </div>
+
+    <div class="slideshow-container animate scale-in">
+        <div class="mySlides fade techTheme">
+            <div class="slide-content">
+                <div class="slide-image">
+                    <img src="cyberImage.png" alt="Template One" class="Tech">
+                    <div class="projectOverlay">
+                        <a href="techsite-template/index.html" class="viewButton">View Live Site ↗</a>
+                    </div>
+                </div>
+                <div class="slide-info">
+                    <h2>Cyber Company</h2>
+                    <p>A razor-sharp, high-voltage landing page design featuring neon terminal accents and dark-mode
+                        styling built for advertising modern security platforms.</p>
+                    <div class="slideButtons">
+                        <button class="see-site-btn"
+                            onclick="document.location.href = 'techsite-template/index.html';">View</button>
+                        <button class="see-next-btn" onclick="plusSlides(1)">Next ></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mySlides fade medicalTheme">
+            <div class="slide-content">
+                <div class="slide-image">
+                    <img src="healthCare.png" alt="Template Two" class="med">
+                    <div class="projectOverlay2">
+                        <a href="medical-template/index.html" class="viewButton">View Live Site ↗</a>
+                    </div>
+                </div>
+                <div class="slide-info">
+                    <h2>Medical Site</h2>
+                    <p>A clean, modern medical website template designed to inspire trust and professionalism,
+                        perfect for GP practices, clinics, and healthcare providers.</p>
+                    <div class="slideButtons">
+                        <button class="see-site-btn"
+                            onclick="document.location.href = 'medical-template/index.html';">View</button>
+                        <button class="see-next-btn" onclick="plusSlides(1)">Next ></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mySlides fade handyTheme">
+            <div class="slide-content">
+                <div class="slide-image">
+                    <img src="handyMan.png" alt="Template Three" class="med">
+                    <div class="projectOverlay">
+                        <a href="localfreelancer/index.html" class="viewButton">View Live Site ↗</a>
+                    </div>
+                </div>
+                <div class="slide-info">
+                    <h2 class="handiman">Handyman Site</h2>
+                    <p class="handimanp">A modern design with vibrant showcases and an easy-to-navigate layout. It
+                        features a services section, perfect for a contractor trying to showcase their skills.</p>
+                    <div class="slideButtons">
+                        <button class="see-site-btn handy"
+                            onclick="document.location.href = 'localfreelancer/index.html';">View</button>
+                        <button class="see-next-btn handy" onclick="plusSlides(1)">Next ></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div style="text-align:center" class="animate fade-in delay-2">
+        <span class="dot techDot" onclick="currentSlide(1)"></span>
+        <span class="dot mediDot" onclick="currentSlide(2)"></span>
+        <span class="dot handyDot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <div class="ourWork">
+        <h1 class="secondaryTitle">Official Work</h1>
+        <p>Here are some official projects we've completed - come take a look!</p>
+        
+        <div class="slideshow-container" style="display: flex; justify-content: center; align-items: center; min-height: 200px; border: 1px dashed #ccc; padding: 20px; margin-top: 5rem;">
+            <p style="text-align: center; color: #888;">We haven't completed any work yet, sorry!</p>
+            
+            <!--
+            <div class="mySlides fade techTheme">
+                <div class="slide-content">
+                    ... (your future project code)
+                </div>
+            </div>
+            -->
+        </div>
+    </div>
+</section>
+
+
+
+    <section class="pricing" id="prices">
+        <div class="smallTitle animate fade-in">
+            <p>Pricing</p>
+        </div>
+        <div class="servicesTitle animate slide-up">
+            <h1>How much we charge</h1>
+            <p>If you're looking for something <b>cheap</b>, whilst still looking for <b>quality, functional
+                    websites</b> - Then we've got you covered, our range of prices are sure to cover your every
+                need</b></span></p>
+        </div>
+
+        <div class="pricingContainer animate-on-scroll pop-in">
+
+            <!-- Basic Plan -->
+            <div class="priceBox animate scale-in">
+                <div class="textStuff">
+                    <div class="icon-price">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h1 class="priceTitle">Basic</h1>
+                    <h4 class="describe">Ideal for small / local businesses.</h4>
+                    <h3 class="starting">Starting from</h3>
+                    <h3 class="price"><span class="boldPrice">£199</span>/site</h3>
+                    <h4 class="feautures">Features:</h4>
+                    <div class="linebreak"></div>
+                    <h4 class="priceInfo">
+                        ✓ Custom 4 Section Site<br>
+                        ✓ Semi mobile responsive<br>
+                        ✓ Fast loading & optimized<br>
+                        ✓ Contact form<br>
+                        ✓ Social media links<br>
+                        ✓ Single page<br>
+                    </h4>
+                </div>
+                <button class="priceButton" onclick="document.location.href='#contact'">Start Now</button>
+            </div>
+
+            <!-- Pro Plan (Best Value - Middle) -->
+            <div class="priceBox animate scale-in delay-1">
+                <div class="textStuff">
+                    <div class="icon-price">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h1 class="priceTitle">Pro</h1>
+                    <h4 class="describe">Ideal for growing teams needing multi-page layouts.</h4>
+                    <h3 class="starting">Starting from</h3>
+                    <h3 class="price"><span class="boldPrice">£499</span>/site</h3>
+                    <h4 class="feautures">Features:</h4>
+                    <div class="linebreak"></div>
+                    <h4 class="priceInfo">
+                        ✓ Premium 3-4 Page Layout<br>
+                        ✓ Up to 5-7 sections per page<br>
+                        ✓ Fully mobile optimized<br>
+                        ✓ Maximum speed tuning<br>
+                        ✓ Multiple contact forms<br>
+                        ✓ Custom UI styles<br>
+                        ✓ 14 days premium support
+                        <br>
+                        <br>
+                    </h4>
+                </div>
+                <button class="priceButtonSpecial" onclick="document.location.href='#contact'">Start Now</button>
+            </div>
+
+            <!-- Enterprise Plan -->
+            <div class="priceBox animate scale-in delay-2">
+                <div class="textStuff">
+                    <div class="icon-price">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h1 class="priceTitle">Advanced</h1>
+                    <h4 class="describe">Ideal for small freelancers and businesses</h4>
+                    <h3 class="starting">Starting from</h3>
+                    <h3 class="price"><span class="boldPrice">£299</span>/site</h3>
+                    <h4 class="feautures">Features:</h4>
+                    <div class="linebreak"></div>
+                    <h4 class="priceInfo">
+                        ✓ Custom 1-2 Page Layout<br>
+                        ✓ Up to 5 sections per page<br>
+                        ✓ 100% mobile responsive<br>
+                        ✓ Fast loading & optimized<br>
+                        ✓ Secure contact form<br>
+                        ✓ Social media links<br>
+                        ✓ 7 day post-launch support
+                    </h4>
+                    <br>
+                </div>
+                <button class="priceButton" onclick="document.location.href='#contact'">Start Now</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contactParent" id="contact">
+        <div class="smallTitle animate fade-in">
+            <p>Contact Us</p>
+        </div>
+        <div class="servicesTitle animate slide-up">
+            <h1>Wanna start?</h1>
+            <p>Still thinking? No need to wait! Fill in some details so we can get start chatting!</p>
+        </div>
+        <div class="contactSection animate scale-in">
+            <div class="contactContainer">
+                <div class="contactHeader">
+                    <h2>Let's Build Something</h2>
+                    <p>Have a project in mind? Reach out and let's get started.</p>
+                </div>
+
+                <form class="contactForm" autocomplete="off" action="https://formspree.io/f/mykqeden" method="POST">
+                    <div class="inputRow">
+                        <div class="inputGroup">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+                        <div class="inputGroup">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        </div>
+                    </div>
+
+                    <div class="inputGroup">
+                        <label for="subject">Project Type</label>
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected hidden>Select a website tier...</option>
+                            <option value="basic">Basic (Single Page)</option>
+                            <option value="advanced">Advanced (1-2 Pages)</option>
+                            <option value="pro">Pro (3-4 Pages)</option>
+                        </select>
+                    </div>
+
+                    <div class="inputGroup">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required
+                            placeholder="Tell us a bit about your project goals..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submitButton">
+                        Send Message <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer id="footer" class="animate fade-in">
+
+        <div class="footerHead">
+            <h1 class="footerTitle">Silva Lemon Web Development</h>
+                <h3 class="footerSubtitle">Contact us and other stuff</h3>
+        </div>
+
+        <div class="contentFooter">
+            <div class="footerPart">
+                <h2 class="linksTitle">Links:</h>
+                    <div class="links">
+                        <h3 class="linksAbout"><a href="#about">About</a></h>
+                            <h3 class="linksServices"><a href="#services">Services</a></h>
+                                <h3 class="linksPricing"><a href="#pricing">Pricing</a></h>
+                                    <h3 class="linksContact"><a href="#footer">Contact</a></h>
+                    </div>
+            </div>
+
+            <div class="footerPart">
+                <h2 class="linksTitle">Socials:</h>
+                    <div class="links">
+                        <h3 class="linksTwitter"><a href="https://www.x.com">Twitter / X</a></h>
+                            <h3 class="linksInstagram"><a href="https://www.instagram.com">Instagram</a></h>
+                                <h3 class="linksYoutube"><a href="https://www.youtube.com">Youtube</a></h>
+                                    <h3 class="linksTiktok"><a href="https://www.tiktok.com">Tiktok</a></h>
+                    </div>
+            </div>
+
+            <div class="footerPart">
+                <h2 class="linksTitle">Contact:</h>
+                    <div class="links">
+                        <h3 class="linksEmailTitle">Email:</h>
+                            <h3 class="linksEmail"><a href=mailto:>ifeanyi.dev@proton.me</a></h>
+                                <h3 class="linksPhoneTitle">Phone:</h>
+                                    <h3 class="linksPhone"><a href=mailto:>No number</a></h>
+                    </div>
+            </div>
+        </div>
+        <div class="line">
+            <h6>line</h6>
+        </div>
+
+
+        <div class="footerCopyright">
+            <h3 class="copyright">© 2026 Silva Lemon Web Development. All rights reserved.</h>
+        </div>
+    </footer>
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+
+            let slideIndex = 1;
+
+            window.plusSlides = function (n) {
+                showSlides(slideIndex += n);
+            }
+
+            window.currentSlide = function (n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+
+                if (n > slides.length) {
+                    slideIndex = 1;
+                }
+
+                if (n < 1) {
+                    slideIndex = slides.length;
+                }
+
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].classList.remove(
+                        "active",
+                        "activeTech",
+                        "activeMedical",
+                        "activeHandy"
+                    );
+                }
+
+                slides[slideIndex - 1].style.display = "block";
+
+                if (dots.length >= 3) {
+
+                    if (slideIndex === 1) {
+                        dots[0].classList.add("active", "activeTech");
+                    }
+
+                    if (slideIndex === 2) {
+                        dots[1].classList.add("active", "activeMedical");
+                    }
+
+                    if (slideIndex === 3) {
+                        dots[2].classList.add("active", "activeHandy");
+                    }
+
+                }
+            }
+
+            showSlides(slideIndex);
+
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

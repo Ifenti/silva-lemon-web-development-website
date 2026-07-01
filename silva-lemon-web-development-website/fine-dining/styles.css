@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+
+body {
+    background-color: black;
+    color: white;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: 'cursive';
+}
+
+
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Pinyon Script', cursive;
+}
+
+/* Background */
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url("bg.jpg") center/cover no-repeat;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 90px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 100;
+    padding-top: 20px;
+}
+
+.navContent {
+    width: 85%;
+    max-width: 1400px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: antiquewhite;
+    cursor: default;
+    display: flex;
+    align-items: center;
+}
+
+.logo h2 {
+    margin: 0;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 40px;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul a {
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.navbar ul a:hover {
+    color: white;
+    text-shadow: 0 0 8px rgba(255,255,255,.8);
+}
+
+.bookNow {
+    display: flex;
+    align-items: center;
+
+    color: antiquewhite;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.bookNow h2 {
+    margin: 0;
+}
+
+.bookNow:hover {
+    color: white;
+    transform: scale(1.05);
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.titleContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 60%;
+    height: 100vh;
+
+    margin: auto;
+    text-align: center;
+}
+
+.titleContent h1 {
+    font-size: 100px;
+    margin-bottom: 0;
+}
+
+.titleContent h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    font-size: 40px;
+    color: rgb(255,231,200);
+}
+
+.titleContent p {
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(255,218,169);
+}
+
+/* ===========================
+   INPUT
+=========================== */
+
+input[name="location"] {
+    width: 60%;
+
+    padding: 12px 20px;
+
+    background: rgba(255,207,153,0);
+    color: white;
+
+    border: 2px solid white;
+    border-radius: 25px;
+
+    font-size: 16px;
+    font-family: cursive;
+    font-weight: 600;
+
+    outline: none;
+
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 6px rgba(0,0,0,.3);
+
+    transition: .3s;
+}
+
+input[name="location"]:hover {
+    background: rgba(255,255,255,.1);
+    border-color: rgb(255,232,183);
+}
+
+input[name="location"]:focus {
+    box-shadow: 0 0 8px rgba(255,255,255,.5);
+}
+
+input[name="location"]::placeholder {
+    color: rgb(255,232,183);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+input[name="location"] {
+    font-family: 'cursive';
+}
+
+.bookNow {
+    display: flex;
+    align-items: center;
+}
+
+.bookNow a {
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.3s;
+    border: 2px rgb(255, 225, 204) solid;
+    padding: 10px 20px;
+    border-radius: 30px;
+
+}
+
+.bookNow li{
+        text-decoration: none;
+    list-style: none;
+}
+
+.bookNow a:hover {
+    color: white;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.384);
+    transform: scale(1.05);
+}
