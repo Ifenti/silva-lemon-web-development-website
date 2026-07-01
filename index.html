@@ -214,7 +214,7 @@
             <span class="dot techDot" onclick="currentSlide(1)"></span>
             <span class="dot mediDot" onclick="currentSlide(2)"></span>
             <span class="dot handyDot" onclick="currentSlide(3)"></span>
-            <span class="dot diningDot" onclick="currentSlide(4)"></span>
+            <span class="dot restaurantDot" onclick="currentSlide(4)"></span>
         </div>
 
         <div class="ourWork">
@@ -468,7 +468,8 @@
                         "active",
                         "activeTech",
                         "activeMedical",
-                        "activeHandy"
+                        "activeHandy",
+                        "activeRestaurant"
                     );
                 }
 
@@ -486,6 +487,9 @@
 
                     if (slideIndex === 3) {
                         dots[2].classList.add("active", "activeHandy");
+                    }
+                    if (slideIndex === 4) {
+                        dots[3].classList.add("active", "activeRestaurant");
                     }
 
                 }

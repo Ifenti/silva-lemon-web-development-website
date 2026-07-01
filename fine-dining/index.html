@@ -7,11 +7,21 @@
     <title>Dining Template</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <style>
+        .animate {
+            opacity: 0;
+            transition: opacity 0.8s ease-in-out;
+        }
+
+        .animate.visible {
+            opacity: 1;
+        }
+    </style>
 </head>
 
 <body>
     <section class="header" id="header">
-        <div class="navbar">
+        <div class="navbar animate">
             <div class="navContent">
                 <div class="logo">
                     <h1>Dégoûtante</h1>
@@ -29,7 +39,7 @@
                 </div>
             </div>
         </div>
-        <div class="titleContent">
+        <div class="titleContent animate">
             <h1>Dégoûtante Dining</h1>
             <h3>An experience you will remember.</h3>
             <p>Find a location to eat today!</p>
@@ -38,51 +48,46 @@
     </section>
 
     <section class="menu" id="menu">
-        <h1>Our star dishes</h1>
-        <p class="des">Here are some dishes we think you'll fall in love with! Feel free to ask for any of these at any
-            of our
-            locations!</p>
+        <h1 class="animate">Our star dishes</h1>
+        <p class="des animate">Here are some dishes we think you'll fall in love with! Feel free to ask for any of these at any of our locations!</p>
 
         <div class="starContainer1">
-            <div class="foodItem">
+            <div class="foodItem animate">
                 <img src="highqualitysushi.png">
                 <h1>Food Item</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis totam adipisci suscipit.</p>
                 <p>⭐⭐⭐⭐⭐ (65)</p>
             </div>
 
-
-
-            <div class="foodItem">
+            <div class="foodItem animate">
                 <img src="steak.png">
                 <h1>Food Item</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis totam adipisci suscipit.</p>
                 <p>⭐⭐⭐⭐⭐ (65)</p>
             </div>
 
-            <div class="foodItem">
+            <div class="foodItem animate">
                 <img src="noodles.png" alt="Image by pngtree.com">
                 <h1>Food Item</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis totam adipisci suscipit.</p>
                 <p>⭐⭐⭐⭐⭐ (65)</p>
             </div>
 
-
-            <div class="foodItem">
+            <div class="foodItem animate">
                 <img src="highqualitysushi.png">
                 <h1>Food Item</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis totam adipisci suscipit.</p>
                 <p>⭐⭐⭐⭐⭐ (65)</p>
             </div>
 
-            <div class="foodItem">
+            <div class="foodItem animate">
                 <img src="steak.png">
                 <h1>Food Item</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis totam adipisci suscipit.</p>
                 <p>⭐⭐⭐⭐⭐ (65)</p>
             </div>
 
-            <div class="foodItem">
+            <div class="foodItem animate">
                 <img src="noodles.png">
                 <h1>Food Item</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis totam adipisci suscipit.</p>
@@ -91,26 +96,24 @@
         </div>
 
         <div class="events">
-            <h1>Events we can run</h1>
-            <p>Here are some events we can run for you!</p>
+            <h1 class="animate">Events we can run</h1>
+            <p class="animate">Here are some events we can run for you!</p>
             <div class="eventContainer">
-                <div class="event">
+                <div class="event animate">
                     <img src="cake.png">
                     <div class="text">
                         <h2>Event Number One</h2>
-                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aspernatur asperiores quae animi
-                            voluptas.</P>
+                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aspernatur asperiores quae animi voluptas.</P>
                     </div>
                     <div class="leanrmore">
                         <button>Learn More</button>
                     </div>
                 </div>
-                <div class="event">
+                <div class="event animate">
                     <img src="pizza.png" alt="">
                     <div class="text">
                         <h2>Event Number Two</h2>
-                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aspernatur asperiores quae animi
-                            voluptas.</P>
+                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aspernatur asperiores quae animi voluptas.</P>
                     </div>
                     <div class="leanrmore">
                         <button class="dark">Learn More</button>
@@ -120,17 +123,15 @@
         </div>
     </section>
 
-
     <section class="reviews" id="reviews">
-        <h1>Customer Reviews</h1>
-        <p>We're great! We know - But don't take our word for it, have a look at some of our glowing reviews</p>
+        <h1 class="animate">Customer Reviews</h1>
+        <p class="animate">We're great! We know - But don't take our word for it, have a look at some of our glowing reviews</p>
 
         <div class="reviewsContainer">
             <div class="review1">
-                <div class="review">
+                <div class="review animate">
                     <p class="stars">⭐⭐⭐⭐⭐</p>
-                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate animi nostrum voluptatem
-                        voluptas quasi ducimus veniam tempore veritatis quia rem!"</p>
+                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate animi nostrum voluptatem voluptas quasi ducimus veniam tempore veritatis quia rem!"</p>
 
                     <div class="details">
                         <div class="icon">
@@ -142,10 +143,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="review">
+                <div class="review animate">
                     <p class="stars">⭐⭐⭐⭐⭐</p>
-                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate animi nostrum voluptatem
-                        voluptas quasi ducimus veniam tempore veritatis quia rem!"</p>
+                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate animi nostrum voluptatem voluptas quasi ducimus veniam tempore veritatis quia rem!"</p>
 
                     <div class="details">
                         <div class="icon">
@@ -157,10 +157,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="review">
+                <div class="review animate">
                     <p class="stars">⭐⭐⭐⭐⭐</p>
-                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate animi nostrum voluptatem
-                        voluptas quasi ducimus veniam tempore veritatis quia rem!"</p>
+                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate animi nostrum voluptatem voluptas quasi ducimus veniam tempore veritatis quia rem!"</p>
 
                     <div class="details">
                         <div class="icon">
@@ -172,10 +171,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="review">
+                <div class="review animate">
                     <p class="stars">⭐⭐⭐⭐⭐</p>
-                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate animi nostrum voluptatem
-                        voluptas quasi ducimus veniam tempore veritatis quia rem!"</p>
+                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate animi nostrum voluptatem voluptas quasi ducimus veniam tempore veritatis quia rem!"</p>
 
                     <div class="details">
                         <div class="icon">
@@ -187,10 +185,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="review">
+                <div class="review animate">
                     <p class="stars">⭐⭐⭐⭐⭐</p>
-                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate animi nostrum voluptatem
-                        voluptas quasi ducimus veniam tempore veritatis quia rem!"</p>
+                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate animi nostrum voluptatem voluptas quasi ducimus veniam tempore veritatis quia rem!"</p>
 
                     <div class="details">
                         <div class="icon">
@@ -203,15 +200,13 @@
                     </div>
                 </div>
             </div>
-
         </div>
 
         <div class="reviewsContainer">
             <div class="review2">
-                <div class="review">
+                <div class="review animate">
                     <p class="stars">⭐⭐⭐⭐⭐</p>
-                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate animi nostrum voluptatem
-                        voluptas quasi ducimus veniam tempore veritatis quia rem!"</p>
+                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate animi nostrum voluptatem voluptas quasi ducimus veniam tempore veritatis quia rem!"</p>
 
                     <div class="details">
                         <div class="icon">
@@ -223,10 +218,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="review">
+                <div class="review animate">
                     <p class="stars">⭐⭐⭐⭐⭐</p>
-                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate animi nostrum voluptatem
-                        voluptas quasi ducimus veniam tempore veritatis quia rem!"</p>
+                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate animi nostrum voluptatem voluptas quasi ducimus veniam tempore veritatis quia rem!"</p>
 
                     <div class="details">
                         <div class="icon">
@@ -238,10 +232,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="review">
+                <div class="review animate">
                     <p class="stars">⭐⭐⭐⭐⭐</p>
-                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate animi nostrum voluptatem
-                        voluptas quasi ducimus veniam tempore veritatis quia rem!"</p>
+                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate animi nostrum voluptatem voluptas quasi ducimus veniam tempore veritatis quia rem!"</p>
 
                     <div class="details">
                         <div class="icon">
@@ -253,10 +246,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="review">
+                <div class="review animate">
                     <p class="stars">⭐⭐⭐⭐⭐</p>
-                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate animi nostrum voluptatem
-                        voluptas quasi ducimus veniam tempore veritatis quia rem!"</p>
+                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate animi nostrum voluptatem voluptas quasi ducimus veniam tempore veritatis quia rem!"</p>
 
                     <div class="details">
                         <div class="icon">
@@ -268,10 +260,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="review">
+                <div class="review animate">
                     <p class="stars">⭐⭐⭐⭐⭐</p>
-                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate animi nostrum voluptatem
-                        voluptas quasi ducimus veniam tempore veritatis quia rem!"</p>
+                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate animi nostrum voluptatem voluptas quasi ducimus veniam tempore veritatis quia rem!"</p>
 
                     <div class="details">
                         <div class="icon">
@@ -284,10 +275,9 @@
                     </div>
                 </div>
             </div>
-
         </div>
 
-        <div class="reviewSource">
+        <div class="reviewSource animate">
             <div class="trustpilot">
                 <img src="trustpilot.png">
             </div>
@@ -298,12 +288,12 @@
         </div>
     </section>
 
-        <section class="reviews" id="locations">
-        <h1>Need to find us?</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quas aperiam nulla tempore ipsam, autem odit ab.</p>
+    <section class="reviews" id="locations">
+        <h1 class="animate">Need to find us?</h1>
+        <p class="animate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quas aperiam nulla tempore ipsam, autem odit ab.</p>
 
-        <div class="locationItems">
-            <div class="map-container animate slide-left">
+        <div class="locationItems animate">
+            <div class="map-container">
                 <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158858.182370724!2d-0.24168147!3d51.5287718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon!5e0!3m2!1sen!2suk!4v1710000000000" 
                     allowfullscreen="" 
@@ -313,7 +303,7 @@
                 </iframe>
             </div>
 
-            <div class="location-text animate slide-right delay-1">
+            <div class="location-text">
                 <h2>Get In Touch</h2>
                 
                 <div class="contact-info">
@@ -345,33 +335,51 @@
         </div>
     </section>
 
-    <footer class="footer">
-  <div class="footer-container">
-    <div class="footer-section">
-      <h3>Silva Lemon</h3>
-      <p>Premium web development solutions for your business growth.</p>
-    </div>
-    <div class="footer-section">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-    <div class="footer-section">
-      <h4>Connect</h4>
-      <p>Email: hello@silvalemon.com</p>
-      <p>London, UK</p>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>&copy; 2026 Silva Lemon Web Development. All rights reserved.</p>
-  </div>
-</footer>
+    <footer class="footer animate">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Restaurant Template</h3>
+                <p>Premium meals. Premium feel. Premium name.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Location</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <p>Email: hello@silvalemon.com</p>
+                <p>London, UK</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Silva Lemon Web Development. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                    } else {
+                        entry.target.classList.remove("visible");
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            const hiddenElements = document.querySelectorAll(".animate");
+            hiddenElements.forEach((el) => observer.observe(el));
+        });
+    </script>
 </body>
 
 </html>

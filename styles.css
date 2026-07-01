@@ -546,6 +546,11 @@ nav ul a:hover {
   color: #4cd1a4;
 }
 
+.restaurantTheme .viewButton {
+  color: #ffd54c;
+
+}
+
 .medicalTheme .numbertext {
   color: #4cd1a4;
 }
@@ -586,6 +591,11 @@ nav ul a:hover {
 .activeHandy {
   background: #ff9500;
   box-shadow: 0 0 15px rgba(255,149,0,.6);
+}
+
+.activeRestaurant {
+    background: #ffdb3a;
+  box-shadow: 0 0 15px rgba(255, 217, 0, 0.6);
 }
 
 @keyframes fade {
