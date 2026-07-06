@@ -206,6 +206,26 @@
                     </div>
                 </div>
             </div>
+
+            <div class="mySlides fade tutoringTheme">
+                <div class="slide-content">
+                    <div class="slide-image">
+                        <img src="tutoring.png" alt="Template Four" class="med">
+                        <div class="projectOverlay">
+                            <a href="tutoring-template/index.html" class="viewButton">View Live Site ↗</a>
+                        </div>
+                    </div>
+                    <div class="slide-info">
+                        <h2 class="tutoring">Tutoring Site</h2>
+                        <p class="tutoringp">A professional, modern sleek template, made for local tutors who want a place to display their services.</p>
+                        <div class="slideButtons">
+                            <button class="see-site-btn handy"
+                                onclick="document.location.href = 'tutoring-template/index.html';">View</button>
+                            <button class="see-next-btn handy" onclick="plusSlides(1)">Next ></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <br>
@@ -215,6 +235,7 @@
             <span class="dot mediDot" onclick="currentSlide(2)"></span>
             <span class="dot handyDot" onclick="currentSlide(3)"></span>
             <span class="dot restaurantDot" onclick="currentSlide(4)"></span>
+            <span class="dot tutorDot" onclick="currentSlide(5)"></span>
         </div>
 
         <div class="ourWork">
@@ -469,7 +490,8 @@
                         "activeTech",
                         "activeMedical",
                         "activeHandy",
-                        "activeRestaurant"
+                        "activeRestaurant",
+                        "activeTutor"
                     );
                 }
 
@@ -490,6 +512,9 @@
                     }
                     if (slideIndex === 4) {
                         dots[3].classList.add("active", "activeRestaurant");
+                    }
+                    if (slideIndex === 5){
+                        dots[4].classList.add("active", "activeTutor")
                     }
 
                 }

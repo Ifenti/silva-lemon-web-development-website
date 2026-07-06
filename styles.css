@@ -543,12 +543,30 @@ nav ul a:hover {
 }
 
 .medicalTheme .viewButton {
-  color: #4cd1a4;
+  color: #fff9c7;
 }
 
 .restaurantTheme .viewButton {
   color: #ffd54c;
 
+}
+
+.tutoringTheme .viewButton {
+  color: #e4d38a;
+
+}
+
+.tutoringTheme .slide-content{
+  border: #006366 4px solid;
+}
+
+.tutoringTheme .see-next-btn, .tutoringTheme .see-site-btn{
+  background-color: #00636640;
+  border:#129ba0 2px solid;
+  box-shadow: #00636640 0 0 20px;
+}
+.tutoringTheme .projectOverlay{
+  border: 2px #ffe293 solid;
 }
 
 .medicalTheme .numbertext {
@@ -593,6 +611,11 @@ nav ul a:hover {
   box-shadow: 0 0 15px rgba(255,149,0,.6);
 }
 
+
+.activeTutor {
+  background: #0c9191 !important;
+  box-shadow: 0 0 15px rgba(16, 167, 167, 0.6);
+}
 .activeRestaurant {
     background: #ffdb3a;
   box-shadow: 0 0 15px rgba(255, 217, 0, 0.6);
